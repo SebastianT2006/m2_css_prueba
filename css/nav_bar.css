@@ -1,0 +1,81 @@
+.nav-bar {
+  /* Margen para Arriba y 0 a los lados */
+  margin: 30px 0;
+  display: flex;
+  /* Espacio entre los objetos*/
+  
+  /* Centrado en columna*/
+  align-items: center;
+.nav-bar_logo{
+  margin-right: 35%;
+}
+
+  .nav-bar_menu ul {
+    /* Home... forma lista*/
+    display: flex;
+    /* Espacio entre los objetos*/
+    gap: 40px;
+
+    a {
+      /* Color Gris*/
+      color: var(--second-color);
+    }
+    a:hover {
+      /* Color Negro al pasar mouse*/
+      color: var(--third-color);
+    }
+  }
+
+  .nav-bar_login {
+    /* Login... forma lista*/
+    display: flex;
+    /* Espacio entre los objetos*/
+    gap: 15px;
+    /* Centrado en columna*/
+    align-items: center;
+    /* Tocar login cursor dar click */
+    cursor: pointer;
+
+    .login {
+      color: var(--second-color);
+    }
+
+    .signup {
+      background-color: var(--prymary-color);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      /* Tamaño texto */
+      font-size: 1rem;
+      height: 40px;
+      width: 160px;
+    }
+
+    .signup:hover {
+      /* sombra boton sign up */
+      box-shadow: 1px 1px 5px gray;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre logo, menú y login */
+
+    .nav-bar_login {
+      display: none;
+    }
+
+    .nav-bar_logo h1 {
+      font-size: 42px; /* Reducimos el logo para que quepa bien */
+      text-align: center;
+    }
+
+    .nav-bar_menu {
+      display: none;
+    }
+  }
+}

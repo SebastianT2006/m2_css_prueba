@@ -1,0 +1,42 @@
+@import url(nav_bar.css);
+@import url(hero.css);
+@import url(hero2.css);
+@import url(collabs.css);
+@import url(rating.css);
+@import url(feature.css);
+@import url(benefit.css);
+@import url(footer.css);
+@import url(blog.css);
+
+
+:root{
+  --prymary-color: #4CAF4F;
+  --second-color: #4D4D4D;
+  --third--color: #191A15;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'inter';
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 320px) {
+  .container{
+    max-width: 90%;
+  }
+}

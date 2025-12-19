@@ -1,0 +1,51 @@
+.collabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* arriba, derecha, abajo, izquierda*/
+  margin: 50px 50px 50px 50px;
+}
+
+.collabs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 40px 0;
+
+  h2 {
+    font-size: 80px;
+    color: var(--second-color);
+
+  }
+  h3{
+    font-size: 40px;
+  }
+
+  img {
+    margin: 0 50px;
+  }
+}
+button {
+  background-color: var(--prymary-color);
+  width: 165px;
+  height: 62px;
+        border-radius: 40px;
+      border: none;
+}
+
+@media screen and (max-width: 320px) {
+  .collabs-content {
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .collabs_brand {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
